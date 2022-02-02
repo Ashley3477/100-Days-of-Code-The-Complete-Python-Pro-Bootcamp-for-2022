@@ -1,3 +1,11 @@
+	• Indentation error: means space error
+	• \n: change line
+	• Use '' instead of "" if using two strings.
+		print("You" + 'need to add"\n"to change lines.')
+	• Count how many character you input
+    Print(len(input("What is your name?")))
+
+
 ##input
 s = "What is your name?"
 print(len(input(s)))
