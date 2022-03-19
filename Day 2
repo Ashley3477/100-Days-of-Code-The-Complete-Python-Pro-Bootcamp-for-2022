@@ -1,0 +1,61 @@
+1. Data Type:
+ - Integer
+ - float
+ - Boolean : False/True
+ - String : With ""
+ 
+ 2. How to know the data type? print(type(A))
+ 3. How to chage the data type? str(A)
+ 
+ 4.
+ a = "Hello"
+ b = print(a[0])
+ >H
+ 
+ 5. round()
+ 6. type(4//2) >> int and the result will be 2
+ 
+ 7. Final project:
+ 
+# Example Input
+
+```
+Welcome to the tip calculator!
+What was the total bill? $124.56
+How much tip would you like to give? 10, 12, or 15? 12
+How many people to split the bill? 7
+```
+
+# Example Output
+
+```
+Each person should pay: $19.93
+```
+
+
+# Hint
+
+1. [How to round a number to 2 decimal places in Python](https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal)
+2. [How to limit a float to two decimal places in Python](https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python)
+
+
+
+# Solution
+
+[https://replit.com/@appbrewery/tip-calculator-end](https://replit.com/@appbrewery/tip-calculator-end)
+ 
+ 
+ 
+ My answer:
+ 
+ 
+print("Welcome to the calculator!")
+bill = float(input(print("What was the total bill? $")))
+tip = int(input(print("How much tip would you like to give? 10, 12, or 15? ")))
+split = int(input(print("How many people to split the bill?")))
+print(split)
+
+pay = round(float(bill * (1+(tip/100)) / split),2)
+
+print(f"Each person should pay: ${pay}")
+
