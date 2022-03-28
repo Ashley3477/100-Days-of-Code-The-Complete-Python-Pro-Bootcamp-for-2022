@@ -1,0 +1,26 @@
+1. Pseudorandom number generators(Khan Academy)
+  https://www.khanacademy.org/computing/computer-science/cryptography/crypt/v/random-vs-pseudorandom-number-generators
+
+2. Ask Python
+  https://www.askpython.com/python-modules/python-randint-method
+
+3. randian()
+
+  import random
+
+  beg = 10
+  end = 100
+
+  # Generates a random integer between (10, 100)
+  random_integer = random.randint(beg, end)
+  
+ 4. List - A way of Pyhton store data structure
+  EX1. fruits = [item1, item2]
+  EX2. print(states_of_america[1])
+  
+  - can be any data type
+  - The first item at position 0 (SHIFT is zero)
+  
+  ### More Function can be used in list
+  Link: https://docs.python.org/3/tutorial/datastructures.html
+  
