@@ -6,3 +6,7 @@ DAY 1: Variables, input, print
 DAY 2: Daya Type
 
 DAY 3: Control flow and logical operator
+
+DAY 4: Randomization and Python Lists
+
+
