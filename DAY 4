@@ -24,3 +24,6 @@
   ### More Function can be used in list
   Link: https://docs.python.org/3/tutorial/datastructures.html
   
+5. Pick random item:
+  for i in range(5):
+      print(random.choice(a))
