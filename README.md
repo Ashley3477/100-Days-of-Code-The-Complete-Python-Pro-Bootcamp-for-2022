@@ -9,4 +9,4 @@ DAY 3: Control flow and logical operator
 
 DAY 4: Randomization and Python Lists
 
-
+DAY 5: For Loop
