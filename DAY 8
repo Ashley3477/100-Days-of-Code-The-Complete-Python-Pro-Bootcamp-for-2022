@@ -1,1 +1,7 @@
-Functions with inputs
+*1. Functions with inputs
+        def greet_with_name(name):
+          print(f"Hello {name}")
+          print("How are you?")
+          print("The whether is quite good today!")
+
+        greet_with_name("Ashley")
