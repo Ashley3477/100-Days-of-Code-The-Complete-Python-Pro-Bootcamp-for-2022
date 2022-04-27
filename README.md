@@ -12,3 +12,7 @@ DAY 4: Randomization and Python Lists
 DAY 5: For Loop
 
 DAY 6: While
+
+DAY 7: Exercise
+
+DAY 8: Functions with inputs/ Arguments & Parameters
