@@ -1,0 +1,142 @@
+1. The Python Dictionary: Deep Dive
+
+                programming_dictionary = {
+                  "Bug": "An error in a program that prevents the program from running as expected.", 
+                  "Function": "A piece of code that you can easily call over and over again."
+                }
+                
+                ##Retrieving items from dictionary
+                print(programming_dictionary["Bug"])
+                
+                ##Adding new items to dictionary
+                programming_dictionary["Loop"] = "The action of doing sth over and over again."
+                
+                ##Create an empty dictionary
+                empty_dictionary = {}
+                
+                ##Loop through a dictionary *****************************
+                for key in programmin_dictionary:
+                  print(key)
+                  print(programming_dictionary[key])  *************value**************
+                
+                
+                
+2. Grading Program
+                student_scores = {
+                  "Harry": 81,
+                  "Ron": 78,
+                  "Hermione": 99, 
+                  "Draco": 74,
+                  "Neville": 62,
+                }
+                # 🚨 Don't change the code above 👆
+
+                #TODO-1: Create an empty dictionary called student_grades.
+                student_grades = {}
+
+                #TODO-2: Write your code below to add the grades to student_grades.👇
+                student_grades = {
+                  "Harry": 81,
+                  "Ron": 78,
+                  "Hermione": 99, 
+                  "Draco": 74,
+                  "Neville": 62,
+                }
+                for student in student_scores:
+                  print(student)
+                  score = (student_grades[student])
+                  if score > 90:
+                    student_grades[student] = "Outstanding"
+                  elif score > 80:
+                    student_grades[student] = "Exceeds Expectations"
+                  elif score > 70:
+                    student_grades[student] = "Acceptable"
+                  elif score > 60:
+                    student_grades[student] = "Fail"
+
+                # 🚨 Don't change the code below 👇
+                print(student_grades)
+
+*3. Nesting
+      
+                  #Nesting 
+                  capitals = {
+                    "France": "Paris",
+                    "Germany": "Berlin",
+                  }
+
+                  #Nesting a List in a Dictionary
+
+                  travel_log = {
+                    "France": ["Paris", "Lille", "Dijon"],
+                    "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+                  }
+
+
+                  #Nesting Dictionary in a Dictionary
+
+                  travel_log = {
+                    "France": {
+                    "cities_visited": ["Paris", "Lille", "Dijon"], 
+                    "total_visits": 12
+                    },
+                    "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
+                  }
+
+                  #Nesting Dictionaries in Lists
+                  #List contains two items, each item is a dictionary, each dictionary has three three key value pairs
+                  # Each element of the list is a dictionary.
+                  travel_log = [
+                  {
+                    "country": "France", 
+                    "cities_visited": ["Paris", "Lille", "Dijon"], 
+                    "total_visits": 12,
+                  },
+                  {
+                    "country": "Germany",
+                    "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
+                    "total_visits": 5,
+                  },
+                  ]
+***4. EX
+            bid = {}  **************Add empty nest at first***********
+            bidding_finished = False
+
+            while not bidding_finished:
+              name = input("What is your name?").lower()
+              price = input("What is your bid price? $")
+              bid[name] = price   **************************************
+              should_continue = input("Are there any bidder? Type yes or no")
+              if should_continue == 'no':
+                bidding_finished = False
+              elif should_continue == 'yes':   ************************************
+                clear()
+****5. Blind auction
+                from replit import clear
+                #HINT: You can call clear() to clear the output in the console.
+
+                from art import logo
+                print(logo)
+
+                bid = {}
+                bidding_finished = False
+
+                def find_highest_bidder(bidding_record):
+                  highest_bid = 0
+                  winner = ""  ******************8
+                  for bidder in bidding_finished:
+                    bid_amount = bidding_record[bidder]
+                    if bid_amount > highest_bid: **********
+                      highest_bid = bid_amount 
+                      winner = bidder *****************88
+                  print(f"The winner is {winner} with a bid of {highest_bid}")
+
+
+                while not bidding_finished:
+                  name = input("What is your name?").lower()
+                  price = int(input("What is your bid price? $"))
+                  bid[name] = price
+                  should_continue = input("Are there any bidder? Type yes or no")
+                  if should_continue == 'no':
+                    bidding_finished = False
+
