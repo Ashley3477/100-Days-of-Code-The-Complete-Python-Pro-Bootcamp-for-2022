@@ -16,3 +16,5 @@ DAY 6: While
 DAY 7: Exercise
 
 DAY 8: Functions with inputs/ Arguments & Parameters
+
+DAY 9: Dictionaries, nesting, 
